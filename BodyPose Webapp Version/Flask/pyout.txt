@@ -1,0 +1,1 @@
+python: right before opening csv for writing
