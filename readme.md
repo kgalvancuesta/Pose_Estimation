@@ -1,5 +1,5 @@
 # Foreword
-There are currently three versions of this project available. You can find the original desktop demo application above which is available for download and use. You will also find an early version of the web app. The current working version is available in the original [portfolio](https://kgalvancuesta.github.io/portfolio/).  
+There are currently three versions of this project. You can find the original desktop demo application above which is available for download and use. You will also find an early version of the web app. The version in production has been taken private by Case Western Reserve University and STEMPower. You can return to the [portfolio here](https://kgalvancuesta.github.io/portfolio/).
 
 This project was commissioned by STEMPower.
 
@@ -7,7 +7,7 @@ This project was commissioned by STEMPower.
 
 Welcome to Pose Estimation Project, a web app that allows you to analyze human poses without having to install any software tools on your device!
 
-The desktop application takes in images of a person and the subject’s height and outputs coordinates in a metric space using an Artificial Neural Network (ANN) from the BlazePose and Caffe libraries.
+The desktop application takes in images of a person and the subject’s height and outputs coordinates in a metric space using an Convolutional Neural Network (CNN) from the BlazePose and Caffe libraries.
 
 Our website is developed based on the original app. It includes improved features and, most importantly, enhanced ability of mapping as many as 68 human body nodes and producing data about their coordinates.
 
