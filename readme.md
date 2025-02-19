@@ -1,5 +1,5 @@
 # Foreword
-There are currently three versions of this project. You can find the original desktop demo application above which is available for download and use. You will also find an early version of the web app. The version in production has been taken private by Case Western Reserve University and STEMPower. You can return to the [portfolio here](https://kgalvancuesta.github.io/portfolio/).
+There are currently three versions of this project. You can find the original desktop demo application above which is available for download and use. You will also find an early version of the web app. The production version has been taken private by Case Western Reserve University and STEMPower. You can return to the portfolio [here](https://kgalvancuesta.github.io/portfolio/).
 
 This project was commissioned by STEMPower.
 
