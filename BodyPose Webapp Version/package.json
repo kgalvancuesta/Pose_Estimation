@@ -10,11 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "csvtojson": "^2.0.10",
-    "ejs": "^3.1.6",
-    "express": "^4.17.3",
-    "json2csv": "^5.0.7",
-    "request": "^2.88.2",
-    "xhr2": "^0.2.1"
+    "csvtojson": "^2.0.14",
+    "ejs": "^3.1.10",
+    "express": "^4.22.2"
   }
 }

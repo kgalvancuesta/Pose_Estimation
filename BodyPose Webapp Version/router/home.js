@@ -1,9 +1,8 @@
 const express = require('express')
 const fs = require('fs')
+const http = require('http')
 const csv=require('csvtojson');
 const exec = require('child_process').exec;
-// const XMLHttpRequest = require('xhr2');
-const request = require('request');
 
 
 
@@ -14,12 +13,24 @@ homeRouter.get('/', (req,res)=>{
 })
 
 function process_image_and_gen_csv(res){
-    request('http://127.0.0.1:5000', function (error, response, body) {
+    const req = http.get('http://127.0.0.1:5000', function (response) {
+        let body = '';
+        response.setEncoding('utf8');
+        response.on('data', function (chunk) {
+            body += chunk;
+        });
+        response.on('end', function () {
+            console.log('statusCode:', response.statusCode); // Print the response status code if a response was received
+            console.log('body:', body); // Print the data received
+            send_csv_as_response(res)        // res.send(body); //Display the response on the website
+        });
+    });
+
+    req.on('error', function (error) {
         console.error('error:', error); // Print the error
-        console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-        console.log('body:', body); // Print the data received
-        send_csv_as_response(res)        // res.send(body); //Display the response on the website
-      }); }
+        send_csv_as_response(res)
+    });
+}
 
 function send_csv_as_response(res){
     console.log('exec py successfully');
